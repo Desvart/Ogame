@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "esnext",
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "build",
+    "resolveJsonModule": true,
+    "moduleResolution": "Node",
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.json"]
+}

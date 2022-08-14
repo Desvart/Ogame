@@ -1,0 +1,108 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+Empire "1" *-- "n" Planet
+package "Resources" {
+    package "Mines" {
+        Planet "1" *-- "1" MetalMine
+        Planet "1" *-- "1" CrystalMine
+        Planet "1" *-- "1" DeuteriumMine
+    }
+
+    package "Energy" {
+        Planet "1" *-- "1" SolarPlant
+        Planet "1" *-- "1" FusionReactor
+        Planet "1" *-- "n" SolarSatellite
+    }
+
+    package "Storage" {
+        Planet "1" *-- "1" MetalStorage
+        Planet "1" *-- "n" CrystalStorage
+        Planet "1" *-- "1" DeuteriumStorage
+    }
+}
+
+class Empire {
+}
+
+class Planet {
+    name
+    coordinates
+    maxTemperature
+    maxSize
+    solarSatQty
+}
+
+class MetalMine {
+    level
+    production
+    consumption
+    value
+    upgradeCost
+    upgradeDuration
+}
+
+class CrystalMine {
+    level
+    production
+    consumption
+    value
+    upgradeCost
+    upgradeDuration
+}
+
+class DeuteriumMine {
+    level
+    production
+    consumption
+    value
+    upgradeCost
+    upgradeDuration
+}
+
+class SolarPlant {
+    level
+    production
+    value
+    upgradeCost
+    upgradeDuration
+}
+
+class FusionReactor {
+    level
+    production
+    consumption
+    value
+    upgradeCost
+    upgradeDuration
+}
+
+class SolarSatellite {
+    production
+    value
+    upgradeCost
+    upgradeDuration
+}
+
+class MetalStorage {
+    maxStorage
+    value
+    upgradeCost
+    upgradeDuration
+}
+
+class CrystalStorage {
+    maxStorage
+    value
+    upgradeCost
+    upgradeDuration
+}
+
+class DeuteriumStorage {
+    maxStorage
+    value
+    upgradeCost
+    upgradeDuration
+}
+
+@enduml

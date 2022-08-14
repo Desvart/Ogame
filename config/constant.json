@@ -1,0 +1,84 @@
+{
+  "universe": {
+    "speed": 4,
+    "ratio": {
+      "metal": 2.5,
+      "crystal": 1.5,
+      "deuterium": 1
+    }
+  },
+  "building": {
+    "mine": {
+      "metal": {
+        "cost": {
+          "base": {
+            "power": 1.5,
+            "metal": 60,
+            "crystal": 15,
+            "deuterium": 0
+          }
+        },
+        "production": {
+          "basicIncome": 30,
+          "power": 1.1,
+          "baseMultiplier": 30,
+          "plasmaMultiplier": 0.01,
+          "positionFactor": [1, 1, 1, 1, 1, 1.17, 1.23, 1.35, 1.23, 1.17, 1, 1, 1, 1, 1]
+        },
+        "consumption": {
+          "multiplier": 10,
+          "power": 1.1
+        }
+      },
+      "crystal": {
+        "cost": {
+          "base": {
+            "power": 1.6,
+            "metal": 48,
+            "crystal": 24,
+            "deuterium": 0
+          }
+        },
+        "production": {
+          "basicIncome": 15,
+          "power": 1.1,
+          "baseMultiplier": 20,
+          "plasmaMultiplier": 0.0066,
+          "positionFactor": [1.4, 1.296, 1.2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+        },
+        "consumption": {
+          "multiplier": 10,
+          "power": 1.1
+        }
+      },
+      "deuterium": {
+        "cost": {
+          "base": {
+            "power": 1.5,
+            "metal": 225,
+            "crystal": 75,
+            "deuterium": 0
+          }
+        },
+        "production": {
+          "basicIncome": 0,
+          "power": 1.1,
+          "baseMultiplier": 20,
+          "plasmaMultiplier": 0.0033
+        },
+        "consumption": {
+          "multiplier": 20,
+          "power": 1.1
+        }
+      }
+    }
+  },
+  "staff": {
+    "geologist": {
+      "metalMult": 0.1
+    },
+    "all": {
+      "metalMult": 0.02
+    }
+  }
+}
